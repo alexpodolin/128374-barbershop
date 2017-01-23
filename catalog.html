@@ -13,14 +13,14 @@
 
 			<div class="header-menu">
 				<div class="header-menu-logo"> 
-					<img src="http://placehold.it/140x70" alt="">
+					<a href="#"><img src="http://placehold.it/140x70" alt=""></a>
 				</div>
 
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</span></a></li>
+					<li><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 
@@ -40,60 +40,51 @@
 			<ul class="main-breadcrumbs">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Средства для ухода</a></li>
+				<li class="main-breadcrumbs-current">Средства для ухода</li>
 			</ul>			
 
 			<form action="#" method="POST" id="main-assortment">	
 
 				<h2 class="main-title-filter">Производители:</h2>
 
-				<label for="main-baxter">
-					<input type="checkbox" checked id="main-baxter">Baxter of california
-				</label>
+				<label for="main-baxter">Baxter of california</label>
+				<input type="checkbox" checked id="main-baxter">
 
-				<label for="main-natty">
-					<input type="checkbox" id="main-natty">Mr Natty
-				</label>
+				<label for="main-natty">Mr Natty</label>
+				<input type="checkbox" id="main-natty">
 
-				<label for="main-suavecito">
-					<input type="checkbox" checked id="main-suavecito">Suavecito
-				</label>
+				<label for="main-suavecito">Suavecito</label>
+				<input type="checkbox" checked id="main-suavecito">
 
-				<label for="main-malin">
-					<input type="checkbox" id="main-malin">Malin+Goetz
-				</label>
+				<label for="main-malin">Malin+Goetz</label>
+				<input type="checkbox" id="main-malin">
 
-				<label for="main-murray">
-					<input type="checkbox" id="main-murray">Murray's
-				</label>
+				<label for="main-murray">Murray's</label>
+				<input type="checkbox" id="main-murray">
 
-				<label for="main-american">
-					<input type="checkbox" checked id="main-american">American crew
-				</label>
+				<label for="main-american">American crew</label>
+				<input type="checkbox" checked id="main-american">
 
-				<h2 class="main-title-filter">Производители:</h2>
+				<h2 class="main-title-filter">Группы товаров:</h2>
 
-				<label for="main-razor">
-					<input type="radio" id="main-razor">Бритвенные принадлежности
-				</label>
+				<label for="main-razor">Бритвенные принадлежности</label>
+				<input type="radio" id="main-razor">
 
-				<label for="main-care">
-   					<input type="radio" checked id="main-care">Средства для ухода
-   				</label>
+				<label for="main-care">Средства для ухода</label>
+				<input type="radio" checked id="main-care">
 
-   				<label for="main-accessories">
-   					<input type="radio" id="main-accessories">Аксессуары
-   				</label> 
+   				<label for="main-accessories">Аксессуары</label> 
+   				<input type="radio" id="main-accessories">
 
    				<button type="submit" form="main-assortment">Показать</button>
 			</form>
 
 			<div class="main-catalog">
-				<div class="main-catalog-item">
+				<div class="main-catalog-items">
 
-					<article class="main-item">
+					<article class="main-catalog-item">
 						<a href="#"><img src="http://placehold.it/220x165" alt=""></a>
-						<span class="main-item-title">Набор для путешествий<br>"Baxter of California"</span>
+						<a class="main-item-title" href="#"><span>Набор для путешествий<br>"Baxter of California"</span></a>
 
 						<div class="main-item-buy">
 							<div class="main-item-price">2 900 руб.</div>
@@ -101,9 +92,9 @@
 						</div>
 					</article>	
 
-					<article class="main-item">
+					<article class="main-catalog-item">
 						<a href="#"><img src="http://placehold.it/220x165" alt=""></a>
-						<span class="main-item-title">Увлажняющий кондиционер<br>"Baxter of California"</span>
+						<a class="main-item-title" href="#"><span>Увлажняющий кондиционер<br>"Baxter of California"</span></a>
 
 						<div class="main-item-buy">
 							<div class="main-item-price">750 руб.</div>
@@ -111,9 +102,9 @@
 						</div>
 					</article>
 
-					<article class="main-item">
+					<article class="main-catalog-item">
 						<a href="#"><img src="http://placehold.it/220x165" alt=""></a>
-						<span class="main-item-title">Гель для волос<br>"Suavecito"</span>
+						<a class="main-item-title" href="#"><span>Гель для волос<br>"Suavecito"</span></a>
 
 						<div class="main-item-buy">
 							<div class="main-item-price">290 руб.</div>
@@ -121,9 +112,9 @@
 						</div>
 					</article>
 
-					<article class="main-item">
+					<article class="main-catalog-item">
 						<a href="#"><img src="http://placehold.it/220x165" alt=""></a>
-						<span class="main-item-title">Глина для укладки волос<br>"American crew"</span>
+						<a class="main-item-title" href="#"><span>Глина для укладки волос<br>"American crew"</span></a>
 
 						<div class="main-item-buy">
 							<div class="main-item-price">500 руб.</div>
@@ -131,9 +122,9 @@
 						</div>
 					</article>
 
-					<article class="main-item">
+					<article class="main-catalog-item">
 						<a href="#"><img src="http://placehold.it/220x165" alt=""></a>
-						<span class="main-item-title"> Гель для бритья<br>"American crew"</span>
+						<a class="main-item-title" href="#"><span> Гель для бритья<br>"American crew"</span></a>
 
 						<div class="main-item-buy">
 							<div class="main-item-price">300 руб.</div>
@@ -141,9 +132,9 @@
 						</div>
 					</article>
 
-					<article class="main-item">
+					<article class="main-catalog-item">
 						<a href="#"><img src="http://placehold.it/220x165" alt=""></a>
-						<span class="main-item-title">Набор для бритья<br>"Baxter of California"</span>
+						<a class="main-item-title" href="#"><span>Набор для бритья<br>"Baxter of California"</span></a>
 
 						<div class="main-item-buy">
 							<div class="main-item-price">3 900 руб.</div>
@@ -153,12 +144,12 @@
 
 				</div>
 
-				<div class="main-pagination">
-					<a class="btn-link" href="#">1</a>
-					<a class="main-link-active" href="#">2</a>
-					<a class="btn-link" href="#">3</a>
-					<a class="btn-link" href="#">4</a>					
-				</div>				
+				<ul class="main-pagination">
+					<li><a class="btn-link" href="#">1</a></li>
+					<li class="main-pagination-active">2</li>
+					<li><a class="btn-link" href="#">3</a></li>
+					<li><a class="btn-link" href="#">4</a></li>			
+				</ul>				
 			</div>
 		</div>	
 	</main>
@@ -182,7 +173,7 @@
             </div>
 
             <div class="footer-copyright">
-                Разработано:<br>
+                <span>Разработано:</span>
                 <a class="btn-link" href="http://htmlacademy.ru/">htmlacademy.ru</a>
             </div>
 
