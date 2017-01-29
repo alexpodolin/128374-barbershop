@@ -8,22 +8,23 @@
 </head>
 
 <body>
-<!--header-->
 	<header class="header">
-		<div class="header-wrapper">
+		<div class="header-wrapper clearfix">
 
 			<div class="header-menu">
 				<div class="header-menu-logo"> 
 					<a href="#"><img src="img/logo.png" width=111 height=24 alt=""></a>
 				</div>
 
-				<ul>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+				<nav class="header-main-nav">
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li class="header-main-nav-active"><a>Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
 
 				<div class="header-menu-account">
 					<a class="header-menu-account-logo" href="#">Вход</a>
@@ -33,16 +34,15 @@
 		</div>
 	</header>
 
-<!--main-->
-	<main>
-		<div class="main-wrapper">
+	<main class="main">
+		<div class="main-wrapper clearfix">
 			<h1 class="main-title">Набор для путешествий "Baxter of California"</h1>
 
 			<ul class="main-breadcrumbs">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Магазин</a></li>
 				<li><a href="#">Средства для ухода</a></li>
-				<li class="main-breadcrumbs-current">Набор для путешествий "Baxter of California"</li>
+				<li class="main-breadcrumbs-current"><a>Набор для путешествий "Baxter of California"</a></li>
 			</ul>
 
 			<div class="main-goods">
@@ -50,24 +50,26 @@
 					<img src="img/bxtr_clrn_big_3.jpg" width=460 height=498 alt="">
 				</div>
 
-				<div class="main-goods-wrapper">
-					<div class="main-goods-mini">
-						<img src="img/bxtr_clrn_mini_1.jpg" width=140 height=150 alt="">
-					</div>
-
-					<div class="main-goods-mini">
-						<img src="img/bxtr_clrn_mini_2.jpg" width=140 height=150 alt="">
-					</div>
-
-					<div class="main-goods-mini">
-						<img src="img/bxtr_clrn_mini_3.jpg" width=140 height=150 alt="">
-					</div>
+				<!-- <div class="main-goods-wrapper"> -->
+				<div class="main-goods-mini">
+					<img src="img/bxtr_clrn_mini_1.jpg" width=140 height=150 alt="">
 				</div>
+
+				<div class="main-goods-mini">
+					<img src="img/bxtr_clrn_mini_2.jpg" width=140 height=150 alt="">
+				</div>
+
+				<div class="main-goods-mini">
+					<img src="img/bxtr_clrn_mini_3.jpg" width=140 height=150 alt="">
+				</div>
+				<!-- </div> -->
 			</div>
 
 			<article class="main-good-info">
-				<span class="main-goods-available">Есть в наличии</span>
-				<span class="main-vendor-code">Аритикул: Dexter-AE</span>
+				<div class="main-good-info-nomenclature clearfix">
+					<span class="main-goods-available">Есть в наличии</span>
+					<span class="main-vendor-code">Аритикул: Dexter-AE</span>
+				</div>
 
 				<p>TRAVEL-KIT необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор так же может стать отличным подарком.</p>
 
@@ -88,9 +90,8 @@
 		</div>
 	</main>
 
-<!--footer-->
 	<footer class="footer">
-        <div class="footer-wrapper">
+        <div class="footer-wrapper clearfix">
 
             <div class="footer-addr">
                 Барбершоп "Бородинский"<br>
@@ -101,9 +102,9 @@
 
             <div class="footer-social">
                 <span>Давайте дружить!</span>
-                <a href="http://vk.com" class="footer-social-btn footer-social-vk">Вконтакте</a>
-                <a href="http://facebook.com" class="footer-social-btn footer-social-fb">Facebook</a>
-                <a href="http://instagram.com" class="footer-social-btn footer-social-inst">Instagram</a>
+                <a href="http://vk.com" class="footer-social-btn footer-social-vk"></a>
+                <a href="http://facebook.com" class="footer-social-btn footer-social-fb"></a>
+                <a href="http://instagram.com" class="footer-social-btn footer-social-inst"></a>
             </div>
 
             <div class="footer-copyright">

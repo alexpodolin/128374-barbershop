@@ -8,22 +8,23 @@
 </head>
 
 <body>
-<!--header-->
 	<header class="header">
-		<div class="header-wrapper">
+		<div class="header-wrapper clearfix">
 
 			<div class="header-menu">
 				<div class="header-menu-logo"> 
 					<a href="#"><img src="img/logo.png" width=111 height=24 alt=""></a>
 				</div>
 
-				<ul>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+				<nav class="header-main-nav">
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li class="header-main-nav-active"><a>Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
 
 				<div class="header-menu-account">
 					<a class="header-menu-account-logo" href="#">Вход</a>
@@ -33,23 +34,22 @@
 		</div>
 	</header>
 
-<!--main-->
-	<main>
-		<div class="main-wrapper">
+	<main class="main">
+		<div class="main-wrapper clearfix">
 			<h1 class="main-title">Средства для ухода</h1>
 
 			<ul class="main-breadcrumbs">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Магазин</a></li>
-				<li class="main-breadcrumbs-current">Средства для ухода</li>
+				<li class="main-breadcrumbs-current"><a>Средства для ухода</a></li>
 			</ul>			
 
-			<form action="#" method="POST" id="main-assortment">	
+			<form action="#" method="POST" id="main-assortment" class="main-assortment-form">	
 
 				<h2 class="main-title-filter">Производители:</h2>
 
 				<input type="checkbox" checked id="main-baxter">
-				<label for="main-baxter">Baxter of california</label>
+				<label for="main-baxter" class="main-assortmwnt-form-lbl">Baxter of california</label>
 				
 				<input type="checkbox" id="main-natty">
 				<label for="main-natty">Mr Natty</label>
@@ -78,14 +78,14 @@
 				<input type="radio" id="main-accessories">
    				<label for="main-accessories">Аксессуары</label>    				
 
-   				<button type="submit" form="main-assortment">Показать</button>
+   				<button type="submit" form="main-assortment" class="btn-link">Показать</button>
 			</form>
 
 			<div class="main-catalog">
 				<div class="main-catalog-items">
 
 					<article class="main-catalog-item">
-						<a href="#"><img src="img/bxtr_clrn_1.jpg" width=220 height=165 alt=""></a>
+						<a class="main-catalog-item-foto" href="#"><img src="img/bxtr_clrn_1.jpg" width=220 height=165 alt=""></a>
 						<a class="main-item-title" href="#"><span>Набор для путешествий "Baxter of California"</span></a>
 
 						<div class="main-item-buy">
@@ -95,7 +95,7 @@
 					</article>	
 
 					<article class="main-catalog-item">
-						<a href="#"><img src="img/bxtr_clrn_2.jpg" width=220 height=165 alt=""></a>
+						<a class="main-catalog-item-foto" href="#"><img src="img/bxtr_clrn_2.jpg" width=220 height=165 alt=""></a>
 						<a class="main-item-title" href="#"><span>Увлажняющий кондиционер "Baxter of California"</span></a>
 
 						<div class="main-item-buy">
@@ -105,7 +105,7 @@
 					</article>
 
 					<article class="main-catalog-item">
-						<a href="#"><img src="img/suavecito.jpg" width=220 height=165 alt=""></a>
+						<a class="main-catalog-item-foto" href="#"><img src="img/suavecito.jpg" width=220 height=165 alt=""></a>
 						<a class="main-item-title" href="#"><span>Гель для волос "Suavecito"</span></a>
 
 						<div class="main-item-buy">
@@ -115,7 +115,7 @@
 					</article>
 
 					<article class="main-catalog-item">
-						<a href="#"><img src="img/american_crew_1.jpg" width=220 height=165 alt=""></a>
+						<a class="main-catalog-item-foto" href="#"><img src="img/american_crew_1.jpg" width=220 height=165 alt=""></a>
 						<a class="main-item-title" href="#"><span>Глина для укладки волос "American crew"</span></a>
 
 						<div class="main-item-buy">
@@ -125,7 +125,7 @@
 					</article>
 
 					<article class="main-catalog-item">
-						<a href="#"><img src="img/american_crew_2.jpg" width=220 height=165 alt=""></a>
+						<a class="main-catalog-item-foto" href="#"><img src="img/american_crew_2.jpg" width=220 height=165 alt=""></a>
 						<a class="main-item-title" href="#"><span>Гель для бритья "American crew"</span></a>
 
 						<div class="main-item-buy">
@@ -135,7 +135,7 @@
 					</article>
 
 					<article class="main-catalog-item">
-						<a href="#"><img src="img/bxtr_clrn_3.jpg" width=220 height=165 alt=""></a>
+						<a class="main-catalog-item-foto" href="#"><img src="img/bxtr_clrn_3.jpg" width=220 height=165 alt=""></a>
 						<a class="main-item-title" href="#"><span>Набор для бритья "Baxter of California"</span></a>
 
 						<div class="main-item-buy">
@@ -156,9 +156,8 @@
 		</div>	
 	</main>
 
-<!--footer-->
 	<footer class="footer">
-        <div class="footer-wrapper">
+        <div class="footer-wrapper clearfix">
 
             <div class="footer-addr">
                 Барбершоп "Бородинский"<br>
@@ -169,9 +168,9 @@
 
             <div class="footer-social">
                 <span>Давайте дружить!</span>
-                <a href="http://vk.com" class="footer-social-btn footer-social-vk">Вконтакте</a>
-                <a href="http://facebook.com" class="footer-social-btn footer-social-fb">Facebook</a>
-                <a href="http://instagram.com" class="footer-social-btn footer-social-inst">Instagram</a>
+                <a href="http://vk.com" class="footer-social-btn footer-social-vk"></a>
+                <a href="http://facebook.com" class="footer-social-btn footer-social-fb"></a>
+                <a href="http://instagram.com" class="footer-social-btn footer-social-inst"></a>
             </div>
 
             <div class="footer-copyright">
