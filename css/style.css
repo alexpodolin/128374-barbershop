@@ -135,8 +135,13 @@ a {
   content: "";
   background: url(../img/icon-login.png) no-repeat;
 }
-
-
+.header-menu-account-logo:hover:before { 
+  background: url(../img/icon-login-hover.png) no-repeat;
+}
+.header-menu-account-logo:active:before { 
+  /*background: url(../img/icon-login-hover.png) no-repeat;*/
+  opacity: 0.5;
+}
 .main {
   background-color: #f3f0ed;
   padding: 50px 0 50px 0;
@@ -265,7 +270,9 @@ margin: 28px 0 0 0;
   line-height: 18px;
   font-weight: bold;
 }
-
+.main-assortment-form label:hover {
+  color: #663d15;
+}
 
 
 .main-catalog {
