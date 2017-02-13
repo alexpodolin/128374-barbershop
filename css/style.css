@@ -6,6 +6,9 @@ body {
   line-height: 24px;
   min-width: 960px;
   background: #070707 url(../img/main-background.jpg) no-repeat top center;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1 {
   font-size: 30px;
@@ -305,6 +308,7 @@ padding: 10px 34px;
 .form-btn-enroll {
   margin: 20px 0;
   width: 100%;
+  font-weight: bold;
 }
 .main-content:last-child {
   margin-bottom: 0;
@@ -521,6 +525,7 @@ margin: 28px 0 0 0;
 }
 .main-goods img {
   border: 0;
+  display: block;
 }
 .main-goods-mini {
   float: left;
