@@ -3,8 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Барбершоп-каталог</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">	
+	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> -->
+	<link href="css/fonts.css" rel="stylesheet">		
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if it IE]>-->
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <!--<![endif]-->
 </head>
 
 <body>
@@ -27,14 +33,14 @@
 				</nav>
 
 				<div class="header-menu-account">
-					<a class="header-menu-account-logo" href="#">Вход</a>
+					<a class="header-menu-account-logo" href="#" onclick='showlogin();'>Вход</a>
 				</div>				
 			</div>	
 
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main main-inner-page">
 		<div class="main-wrapper clearfix">
 			<h1 class="main-title">Набор для путешествий "Baxter of California"</h1>
 
@@ -112,5 +118,23 @@
             </div>
         </div>
     </footer>
+
+    <!--Modal-->
+    <div class="modal-login">
+        <div class="modal-login-close" onclick='closeloginwindow();'></div>
+        <h2 class="modal-login-title">Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="modal-login-form" >
+        <input type="text" class="modal-icon-user" name="login" placeholder="Логин" required>
+        <input type="text" class="modal-icon-password" name="password" placeholder="Пароль" required>
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+        <a href="#" class="model-login-restore">Я забыл пароль!</a>
+        <button type="submit" class="modal-login-btn">Войти</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
